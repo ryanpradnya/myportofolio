@@ -11,3 +11,48 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+#imgDiv {
+  width: 300px;
+  height: 300px;
+  background-image: url(/img/avatar.jpg);
+  background-position: -25px -20px;
+  border-radius: 50%;
+  background-size: cover;
+  margin: 0 auto;
+
+}
+
+.padding-top-buttom {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.social-links {
+  padding-top: 30px;
+  margin: 0 auto;
+}
+
+.social-links a {
+  padding: 1em;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.social-links i {
+  font-size: 5em;
+}
+
+.expirience {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.expirience h2 {
+  text-decoration: underline;
+}
+
+.long-div {
+  padding-bottom: 100px;
+}
