@@ -12,7 +12,7 @@ export class Parallax extends Component {
         return (
             <div>
                 <div className="parallax-container">
-                    <div className="parallax"><img src={this.props.image} /></div>
+                    <div className="parallax"><img src={this.props.image} alt="" /></div>
                 </div>
 
             </div>
