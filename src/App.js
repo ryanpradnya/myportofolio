@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
+
 import home from './components/pages/home'
 import projects from './components/pages/projects'
-
 import Navbar from './components/layout/Navbar'
 
 class App extends Component {
