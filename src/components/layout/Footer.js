@@ -8,8 +8,7 @@ export class Footer extends Component {
                     <div className="long-div row">
                         <div className="col l6 s12">
                             <h5 className="white-text">About Me</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit
-                    nec, tincidunt orci</p>
+                            <p>I have an interest in data processing that uses logic and I will use the right algorithm to solve it, even though it uses a lot of energy and mind. But that makes me stronger than before</p>
                         </div>
                         <div className="col l4 offset-l2 s12">
                             <h5 className="white-text">Contact</h5>

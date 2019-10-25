@@ -14,7 +14,7 @@ class Header extends Component {
                 <div className="container">
                     <div className="padding-top-buttom">
                         <div id="imgDiv" />
-                        <h3 className="white-text text-ligthen-5">QWERT ASDF</h3>
+                        <h3 className="white-text text-ligthen-5">GEDE RYAN PRADNYA PRASTIKA</h3>
                         <div className="social-links">
                             {/* LinkedIn */}
                             <a className="tooltipped orange-text text-accent-3" data-position="bottom" data-tooltip="Linked In" href="https://id.linkedin.com/in/gede-ryan-pradnya-prastika" target="_blank" rel="noopener noreferrer">
