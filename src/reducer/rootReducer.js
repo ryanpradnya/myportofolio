@@ -22,18 +22,31 @@ const initState = {
     ],
     educations: [
         {
+            id: 1,
             school: "Udayana University",
             degree: "Bachelor's degree",
             fieldOfStudy: "Information Thechnology",
             startYear: "2013",
-            endYear: "2017"
+            endYear: "2017",
+            schoolCode: 3
         },
         {
+            id: 2,
             school: "SMA Negeri 1 Singaraja",
             degree: "Senior High School",
             fieldOfStudy: "Mathematical and Natural Sciences",
             startYear: "2010",
-            endYear: "2013"
+            endYear: "2013",
+            schoolCode: 2
+        },
+        {
+            id: 3,
+            school: "SMP Negeri 1 Singaraja",
+            degree: "Junior High School",
+            fieldOfStudy: "",
+            startYear: "2007",
+            endYear: "2010",
+            schoolCode: 1
         }
     ],
     skills: [

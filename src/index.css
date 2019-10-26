@@ -113,3 +113,12 @@ Blockquote h3 {
     width: 85%;
   }
 }
+
+.vl {
+  border-right: 6px solid #4e95ff;
+  height: 20em;
+}
+
+.education i {
+  font-size: 5em;
+}

@@ -18,9 +18,7 @@ class Skill extends Component {
                 <div className="row">
                     <div className="col s12 l5">
                         <div className="container">
-                            <h1 className="white-text">
-                                <i className="material-icons left custom-i-size" >important_devices</i> SKILLS
-                                </h1>
+                            <h1 className="white-text">SKILLS</h1>
                             {mySkills}
                         </div>
                     </div>
