@@ -8,7 +8,7 @@ class Education extends Component {
             educations.map(education => {
                 const iconClassName = (((education.schoolCode === 1) ? 'fa fa-pencil' : (education.schoolCode === 2) ? 'fa fa-book' : 'fa fa-graduation-cap') + ' blue-text text-acent-3')
                 const eduList = (education.id % 2) ? (
-                    <div className="row" key={education.id}>
+                    <div className="row" >
                         <div className="col s12 l6 vl">
                             <i className={iconClassName} aria-hidden="true" />
                             <h3 className=" blue-text text-acent-3">{education.school}</h3>
@@ -19,7 +19,7 @@ class Education extends Component {
                         </div>
                     </div>
                 ) : (
-                        <div className="row" key={education.id}>
+                        <div className="row">
                             <div className="col s12 l6 vl">
                             </div>
                             <div className="col s12 l5 push-l1 right-align">
@@ -31,7 +31,7 @@ class Education extends Component {
                         </div>
                     )
                 return (
-                    <div>
+                    <div key={education.id}>
                         {eduList}
                     </div>
                 )

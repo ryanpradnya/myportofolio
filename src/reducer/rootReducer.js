@@ -2,6 +2,7 @@ const initState = {
     isProjectsPage: false,
     expiriences: [
         {
+            id: 1,
             title: "Internet Banking Developer",
             company: "PT. BANK NEGARA INDONESIA (Persero) Tbk.",
             city: "Jakarta",
@@ -11,6 +12,7 @@ const initState = {
             description: "Developing Internet Banking using Java with Infosys's framework, ASABRI web portal using Java with Spring framework, BNI Sekuritas web portal using Java with Spring framework"
         },
         {
+            id: 2,
             title: "Application Developer Jr.",
             company: "PT. Mitra Integrasi Informatika",
             city: "Jakarta",

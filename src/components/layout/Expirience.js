@@ -1,75 +1,49 @@
-import React from 'react'
+import React, { Component } from 'react'
+import $ from 'jquery'
+import { connect } from 'react-redux'
 
-const Expirience
-    = () => {
+class Expirience extends Component {
+    componentDidMount() {
+        $(document).ready(function () {
+            $('.collapsible').collapsible();
+        });
+    }
+    render() {
+        const { expiriences } = this.props
+        const myexpiriences = expiriences.length ? (
+            expiriences.map(expirience => {
+                return (
+                    <li key={expirience.id}>
+                        <div className="collapsible-header orange white-text"><i className="fa fa-clone" aria-hidden="true" />{expirience.title}</div>
+                        <div className="collapsible-body orange white-text">
+                            <h4>{expirience.company}</h4>
+                            <h5>{expirience.city}, {expirience.country}</h5>
+                            <p>{expirience.startDate} - {expirience.endDate}</p>
+                            <p>{expirience.description}</p>
+                        </div>
+                    </li>
+                )
+            })
+        ) : (<li className="white-text">-No Skill-</li>)
         return (
             <div className="expirience">
-
                 <div className="row">
-                    <h2 className="green-text">Experience</h2>
-                    <div className="row">
-                        <div className="col s12 l4 green-text text-acent-3">
-                            <h4>
-                                Title 1
-                            </h4>
-
-                        </div>
-                        <div className="col s12 l6 offset-l1">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit
-                    nec, tincidunt orci.</p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit
-                    nec, tincidunt orci.</p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit
-                    nec, tincidunt orci.</p>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col s12 l4 green-text text-acent-3">
-                            <h4>
-                                Title 2
-                            </h4>
-
-                        </div>
-                        <div className="col s12 l6 offset-l1">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit
-                    nec, tincidunt orci.</p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit
-                    nec, tincidunt orci.</p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit
-                    nec, tincidunt orci.</p>
-                        </div>
-                    </div>
-
-                    <div className="row">
-                        <div className="col s12 l4 green-text text-acent-3">
-                            <h4>
-                                Title 3
-                            </h4>
-
-                        </div>
-                        <div className="col s12 l6 offset-l1">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit
-                    nec, tincidunt orci.</p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit
-                    nec, tincidunt orci.</p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit
-                    nec, tincidunt orci.</p>
-                        </div>
-                    </div>
+                    <h2 className="orange-text text-acent-3">Experiences</h2>
+                    <ul className="collapsible popout" data-collapsible="accordion">
+                        {myexpiriences}
+                    </ul>
                 </div>
             </div>
 
         )
     }
+}
 
-export default Expirience
+const mapStateToProps = (state) => {
+    return {
+        expiriences: state.expiriences
+    }
+}
+
+export default connect(mapStateToProps)(Expirience)
 

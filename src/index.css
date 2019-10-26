@@ -122,3 +122,11 @@ Blockquote h3 {
 .education i {
   font-size: 5em;
 }
+
+.collapsible-header {
+  font-size: 3em;
+}
+
+.collapsible-header i {
+  font-size: 10em;
+}
