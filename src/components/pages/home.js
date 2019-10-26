@@ -4,6 +4,7 @@ import $ from 'jquery';
 import Header from '../layout/Header'
 import Expirience from '../layout/Expirience'
 import Education from '../layout/Education'
+import Skill from '../layout/Skill'
 import Parallax from '../layout/Parallax'
 import Footer from '../layout/Footer'
 
@@ -26,7 +27,12 @@ class home extends Component {
                     <Expirience />
                 </section>
 
+                <section className="scrollspy" id="skill">
+                    <Skill />
+                </section>
+
                 <Parallax image={img1} />
+
 
                 <section className="container section scrollspy" id="education">
                     <Education />

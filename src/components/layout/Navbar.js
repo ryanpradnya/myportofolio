@@ -7,7 +7,7 @@ import { toHomeAction, toProjectsAction } from '../actions/rootAction'
 // import NavbarHome from './NavbarHome'
 // import NavbarProjects from './NavbarProjects'
 
-import bgnav from '../../img/background-nav.png'
+import bgnav from '../../img/blue-orange.jpg'
 import avatar from '../../img/avatar.jpg'
 
 class Navbar extends Component {
@@ -29,13 +29,16 @@ class Navbar extends Component {
                 <div className="navbar-fixed">
                     <nav className="nav-wrapper blue accent-2 navbar-fixed">
                         <div className="container">
-                            <Link to='/' className="brand-logo">My Page</Link>
+                            <Link to='/' className="brand-logo">
+                                <i className="material-icons custom-size-font">person_pin</i>My Page
+                            </Link>
                             <a href="#!" className="button-collapse" data-activates="slide-out">
                                 <i className="material-icons">menu</i>
                             </a>
                             <ul id="nav-mobile" className="right hide-on-med-and-down">
-                                <li><a href="#experience">Expirience</a></li>
-                                <li><a href="#education">Edication</a></li>
+                                <li><a href="#experience">Expiriences</a></li>
+                                <li><a href="#skill">Skills</a></li>
+                                <li><a href="#education">Edications</a></li>
                                 <li><a href="#footer">Contact</a></li>
                                 <li><NavLink to='/projects' onClick={this.props.toProjects}>Projects</NavLink></li>
                             </ul>
@@ -68,8 +71,9 @@ class Navbar extends Component {
                             <i className="fa fa-facebook-square orange-text text-accent-3" aria-hidden="true" />Facebook
                         </a></li>
                         <li><div className="divider"></div></li>
-                        <li><a className="waves-effect" href="#experience" onClick={this.hideSideNav}>Expirience</a></li>
-                        <li><a className="waves-effect" href="#education" onClick={this.hideSideNav} >Edication</a></li>
+                        <li><a className="waves-effect" href="#experience" onClick={this.hideSideNav}>Expiriences</a></li>
+                        <li><a className="waves-effect" href="#skill" onClick={this.hideSideNav}>Skills</a></li>
+                        <li><a className="waves-effect" href="#education" onClick={this.hideSideNav} >Edications</a></li>
                         <li><a className="waves-effect" href="#footer" onClick={this.hideSideNav}>Contact</a></li>
                         <li><NavLink to='/projects' onClick={this.hideToProjects}>Projects</NavLink></li>
                     </ul>

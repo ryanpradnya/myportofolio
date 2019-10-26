@@ -47,7 +47,10 @@ const initState = {
         "Spring MVC",
         "MySQL",
         "MongoDB",
-        "Oracle SQL"
+        "Oracle SQL",
+        "Redux",
+        "Git",
+        "REST API"
 
     ]
 }
