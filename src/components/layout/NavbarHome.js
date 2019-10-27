@@ -10,7 +10,7 @@ const NavbarHome = (props) => {
             <div className="navbar-fixed">
                 <nav className="nav-wrapper blue accent-2 navbar-fixed">
                     <div className="container">
-                        <a href="#home" className="brand-logo">
+                        <a href="#header" className="brand-logo">
                             <i className="material-icons left">person_pin</i>My Page
                             </a>
                         <a href="#!" className="button-collapse" data-activates="slide-out">

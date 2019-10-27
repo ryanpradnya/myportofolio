@@ -130,3 +130,9 @@ Blockquote h3 {
 .expirience li .collapsible-header i {
   font-size: 1.2em;
 }
+
+.home .custom-parallax .parallax-container {
+  min-height: 200px;
+  line-height: 0;
+  height: auto;
+}

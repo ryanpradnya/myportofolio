@@ -10,11 +10,8 @@ export class Parallax extends Component {
     }
     render() {
         return (
-            <div>
-                <div className="parallax-container">
-                    <div className="parallax"><img src={this.props.image} alt="" /></div>
-                </div>
-
+            <div className="parallax-container">
+                <div className="parallax"><img src={this.props.image} alt="" /></div>
             </div>
         )
     }

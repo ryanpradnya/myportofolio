@@ -16,12 +16,13 @@ class home extends Component {
     componentDidMount() {
         $(document).ready(function () {
             $('.scrollspy').scrollSpy();
+            $('.parallax').parallax();
         });
     }
     render() {
         return (
-            <div>
-                <section className="scrollspy" id="home">
+            <div className="home">
+                <section className="scrollspy" id="header">
                     <Header />
                 </section>
 
@@ -29,12 +30,17 @@ class home extends Component {
                     <Expirience />
                 </section>
 
+                <div className="custom-parallax">
+                    <Parallax image={img1} />
+                </div>
+
                 <section className="scrollspy" id="skill">
                     <Skill />
                 </section>
 
-                <Parallax image={img1} />
-
+                <div className="custom-parallax">
+                    <Parallax image={img1} />
+                </div>
 
                 <section className="container section scrollspy" id="education">
                     <Education />
