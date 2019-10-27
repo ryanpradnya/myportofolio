@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/myportofolio/static/css/main.e5721cd2.chunk.css",
+    "main.js": "/myportofolio/static/js/main.9e19dba2.chunk.js",
+    "main.js.map": "/myportofolio/static/js/main.9e19dba2.chunk.js.map",
+    "runtime-main.js": "/myportofolio/static/js/runtime-main.694b17d2.js",
+    "runtime-main.js.map": "/myportofolio/static/js/runtime-main.694b17d2.js.map",
+    "static/css/2.6a0fa25c.chunk.css": "/myportofolio/static/css/2.6a0fa25c.chunk.css",
+    "static/js/2.31d96d61.chunk.js": "/myportofolio/static/js/2.31d96d61.chunk.js",
+    "static/js/2.31d96d61.chunk.js.map": "/myportofolio/static/js/2.31d96d61.chunk.js.map",
+    "index.html": "/myportofolio/index.html",
+    "precache-manifest.06c246844c633b96ccbc95a9254bfaf1.js": "/myportofolio/precache-manifest.06c246844c633b96ccbc95a9254bfaf1.js",
+    "service-worker.js": "/myportofolio/service-worker.js",
+    "static/css/2.6a0fa25c.chunk.css.map": "/myportofolio/static/css/2.6a0fa25c.chunk.css.map",
+    "static/css/main.e5721cd2.chunk.css.map": "/myportofolio/static/css/main.e5721cd2.chunk.css.map",
+    "static/media/materialize.css": "/myportofolio/static/media/Roboto-Thin.44b78f14.woff",
+    "static/media/index.css": "/myportofolio/static/media/avatar.859e9af7.jpg",
+    "static/media/bg-skill.jpg": "/myportofolio/static/media/bg-skill.64156da2.jpg",
+    "static/media/blue-orange.jpg": "/myportofolio/static/media/blue-orange.15fb81c2.jpg",
+    "static/media/parallax1.jpg": "/myportofolio/static/media/parallax1.83456897.jpg",
+    "static/media/parallax2.jpg": "/myportofolio/static/media/parallax2.5069647f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.694b17d2.js",
+    "static/css/2.6a0fa25c.chunk.css",
+    "static/js/2.31d96d61.chunk.js",
+    "static/css/main.e5721cd2.chunk.css",
+    "static/js/main.9e19dba2.chunk.js"
+  ]
+}
