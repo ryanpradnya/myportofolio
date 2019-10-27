@@ -14,7 +14,14 @@ class Expirience extends Component {
             expiriences.map(expirience => {
                 return (
                     <li key={expirience.id}>
-                        <div className="collapsible-header orange white-text"><i className="fa fa-clone" aria-hidden="true" />{expirience.title}</div>
+                        <div className="collapsible-header orange white-text">
+                            <div className="col s1">
+                                <i className="fa fa-gears" aria-hidden="true" />
+                            </div>
+                            <div className="col s11">
+                                {expirience.title}
+                            </div>
+                        </div>
                         <div className="collapsible-body orange white-text">
                             <h4>{expirience.company}</h4>
                             <h5>{expirience.city}, {expirience.country}</h5>

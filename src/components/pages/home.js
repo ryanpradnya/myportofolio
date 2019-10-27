@@ -21,8 +21,10 @@ class home extends Component {
     render() {
         return (
             <div>
+                <section className="scrollspy" id="home">
+                    <Header />
+                </section>
 
-                <Header />
                 <section className="container section scrollspy" id="experience">
                     <Expirience />
                 </section>

@@ -29,9 +29,9 @@ class Navbar extends Component {
                 <div className="navbar-fixed">
                     <nav className="nav-wrapper blue accent-2 navbar-fixed">
                         <div className="container">
-                            <Link to='/' className="brand-logo">
-                                <i className="material-icons custom-size-font">person_pin</i>My Page
-                            </Link>
+                            <a href="#home" className="brand-logo">
+                                <i className="material-icons left">person_pin</i>My Page
+                            </a>
                             <a href="#!" className="button-collapse" data-activates="slide-out">
                                 <i className="material-icons">menu</i>
                             </a>
@@ -83,7 +83,9 @@ class Navbar extends Component {
                 <div className="navbar-fixed">
                     <nav className="nav-wrapper blue accent-2 navbar-fixed">
                         <div className="container">
-                            <Link to='/' className="brand-logo">My Page</Link>
+                            <Link to='/' className="brand-logo" onClick={this.props.toHome}>
+                                <i className="material-icons left">person_pin</i>My Page
+                            </Link>
                             <ul id="nav-mobile" className="right hide-on-med-and-down">
                                 <li><NavLink to='/' onClick={this.props.toHome}>Home</NavLink></li>
                             </ul>

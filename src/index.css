@@ -34,8 +34,8 @@ header {
 
 }
 
-.custom-size-font {
-  font-size: 10em;
+.navbar-fixed .brand-logo i {
+  font-size: 1.3em;
 }
 
 .padding-top-buttom {
@@ -123,10 +123,10 @@ Blockquote h3 {
   font-size: 5em;
 }
 
-.collapsible-header {
-  font-size: 3em;
+.expirience li .collapsible-header {
+  font-size: 2em;
 }
 
-.collapsible-header i {
-  font-size: 10em;
+.expirience li .collapsible-header i {
+  font-size: 1.2em;
 }
